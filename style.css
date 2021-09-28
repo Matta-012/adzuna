@@ -32,5 +32,15 @@ main .input-container {
 }
 
 .btn {
-  min-width: 262.88px
+  min-width: 292.88px
+}
+
+.input i {
+  position: absolute;
+  padding: 10px 0px 0px 8px;
+  color: rgb(124, 124, 124);
+}
+
+.input input {
+padding-left: 35px;
 }
