@@ -8,3 +8,11 @@ header .logo-container img {
   width: 4rem;
   margin: 0.5rem;
 }
+
+main .hero-container {
+  height: 75vh;
+  width: 100%;
+  background-image: url(./assets/images/headway-5QgIuuBxKwM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
