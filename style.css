@@ -109,3 +109,31 @@ main .hero-container {
   text-decoration: none;
   color: #FFF !important;
 }
+
+main .input-container {
+  max-width: 65%;
+  background:rgba(255, 255, 255, 0.25);
+  padding: 24px 24px;
+}
+
+.registration-input-box {
+  padding: 5px
+}
+
+.input-flex {
+  flex-wrap: wrap;
+}
+
+.btn {
+  min-width: 292.88px
+}
+
+.input i {
+  position: absolute;
+  padding: 10px 0px 0px 8px;
+  color: rgb(124, 124, 124);
+}
+
+.input input {
+padding-left: 35px;
+}
