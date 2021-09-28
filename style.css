@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,9 +7,7 @@
 header .logo-container img {
   width: 4rem;
   margin: 0.5rem;
-<<<<<<< HEAD
-} */
-=======
+
 }
 
 main .hero-container {
@@ -18,5 +16,4 @@ main .hero-container {
   background-image: url(./assets/images/headway-5QgIuuBxKwM-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
->>>>>>> d550bcc30ae3ee29775ba853760659a7f5d8ee67
+} 
