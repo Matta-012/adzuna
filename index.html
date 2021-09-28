@@ -11,40 +11,150 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-container d-flex justify-content-between align-items-center bg-dark">
-        <div class="logo-container d-flex align-items-center">
-            <img src="./assets/images/logo.png" alt="Logotipo da Trybe" class="img-logo rounded img-fluid">
-            <p class="fs-4 fw-bold mb-0 text-light">TrybeZuna Jobs</p>
-        </div>
-        <div class="menu-container d-flex pe-2">
-            <p class="menu fs-5 mb-0 mx-3 text-light">Menu</p>
-            <div class="bar-container fs-3 "><i class="fas fa-bars text-light"></i></div>
-        </div>
-    </header>
-
-<main class="main-container">
-    <section class="hero-container d-flex align-items-center justify-content-center">
-        <div class="input-container align-content-center">
-            <div class="input-flex d-flex align-items-center justify-content-center">
-                    <div class="input p-1">
-                        <i class="fa fa-briefcase"></i>
-                        <input type="text" name="" id="job-title" class="rounded registration-input-box" placeholder="Title">
-                    </div>
-                    <div class="input p-1">
-                        <i class="fa fa-location-arrow"></i>
-                        <input type="text" name="" id="job-location" class="rounded registration-input-box" placeholder="Location">
-                    </div>
-                    <div class="input p-1">
-                        <i class="fa fa-list-alt"></i>
-                        <input type="text" name="" id="job-categories" class="rounded registration-input-box" placeholder="Categories">
-                    </div>
-                    <div class="p-1">
-                        <input type="submit" value="Submit" class='submitBnt btn btn-primary btn-block'>
-                    </div>
+    <header class="header">
+          <nav class="navbar navbar-expand-md bg-faded justify-content-center fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex w-50 me-auto">eJobs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatos</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Poste um emprego</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-    </section>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+        </nav>
+    </header>
+    <main class="main-container">
+      <section class="hero-container d-flex align-items-center justify-content-center">
+        <div class="input-container align-content-center">
+          <div class="input-flex d-flex align-items-center justify-content-center">
+            <div class="input p-1">
+              <i class="fa fa-briefcase"></i>
+              <input type="text" name="" id="job-title" class="rounded registration-input-box" placeholder="Title">
+            </div>
+            <div class="input p-1">
+              <i class="fa fa-location-arrow"></i>
+              <input type="text" name="" id="job-location" class="rounded registration-input-box" placeholder="Location">
+            </div>
+            <div class="input p-1">
+              <i class="fa fa-list-alt"></i>
+              <input type="text" name="" id="job-categories" class="rounded registration-input-box" placeholder="Categories">
+            </div>
+            <div class="p-1">
+              <input type="submit" value="Submit" class='submitBnt btn btn-primary btn-block'>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer class="text-center text-white" style="background-color: #202942">
+      <div class="container">
+        <section class="mt-5">
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Sobre</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Categorias</a>
+              </h6>
+            </div>
+  
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Depoimentos</a>
+              </h6>
+            </div>
+  
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Parceiros</a>
+              </h6>
+            </div>
+  
+          </div>
+
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-5" />
+  
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Contatos
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="https://www.facebook.com/betrybe/" target="_blank" class="text-white me-4">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/betrybe" target="_blank" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/betrybe/" target="_blank" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/school/betrybe/" target="_blank" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Matta-012/adzuna" target="_blank" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2021 Copyright:
+        <a class="text-white" href="https://github.com/Matta-012" target="_blank">
+          Meu nome não é Jhonny
+        </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <a id="back2Top" href="#">
+      ➤
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
