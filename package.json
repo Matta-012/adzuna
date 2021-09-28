@@ -1,0 +1,26 @@
+{
+  "name": "adzuna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matta-012/adzuna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matta-012/adzuna/issues"
+  },
+  "homepage": "https://github.com/Matta-012/adzuna#readme",
+  "devDependencies": {
+    "jest": "^27.2.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.5"
+  }
+}
