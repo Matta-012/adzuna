@@ -16,3 +16,21 @@ main .hero-container {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+main .input-container {
+  max-width: 65%;
+  background:rgba(255, 255, 255, 0.25);
+  padding: 24px 24px;
+}
+
+.registration-input-box {
+  padding: 5px
+}
+
+.input-flex {
+  flex-wrap: wrap;
+}
+
+.btn {
+  min-width: 262.88px
+}
