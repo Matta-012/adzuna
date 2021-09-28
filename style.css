@@ -12,6 +12,10 @@
       transform: translateX(-50%);
       text-align: center;
     }
+    main .input-container {
+      background:rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+    }
 } 
 
 html, body{
@@ -112,8 +116,8 @@ main .hero-container {
 
 main .input-container {
   max-width: 65%;
-  background:rgba(255, 255, 255, 0.25);
   padding: 24px 24px;
+  margin-left: 40px;
 }
 
 .registration-input-box {
@@ -125,7 +129,7 @@ main .input-container {
 }
 
 .btn {
-  min-width: 292.88px
+  min-width: 243.99px
 }
 
 .input i {
@@ -135,5 +139,7 @@ main .input-container {
 }
 
 .input input {
-padding-left: 35px;
+  font-family: 'sans-serif';
+  font-size: 16px;
+  padding-left: 35px;
 }
