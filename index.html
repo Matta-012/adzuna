@@ -11,15 +11,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header-container d-flex justify-content-between align-items-center bg-dark">
-        <div class="logo-container d-flex align-items-center">
-            <img src="./assets/images/logo.png" alt="Logotipo da Trybe" class="img-logo rounded img-fluid">
-            <p class="fs-4 fw-bold mb-0 text-light">TrybeZuna Jobs</p>
-        </div>
-        <div class="menu-container d-flex pe-2">
-            <p class="menu fs-5 mb-0 mx-3 text-light">Menu</p>
-            <div class="bar-container fs-3 "><i class="fas fa-bars text-light"></i></div>
-        </div>
+    <header class="header">
+          <nav class="navbar navbar-expand-md bg-faded justify-content-center fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex w-50 me-auto">eJobs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatos</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Poste um emprego</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="main-container">
