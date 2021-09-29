@@ -87,13 +87,6 @@ main .hero-container {
   background-image: url(./assets/images/headway-5QgIuuBxKwM-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-} 
-
-/*footer*/
-.footer {
-  padding: 60px 0;
-  position: relative;
-  color: #adb5bd;
 }
 
 /* CSS João - Início */
@@ -109,6 +102,15 @@ main .hero-container {
 }
 
 /* CSS João - Fim */
+
+/*footer*/
+.footer {
+  padding: 60px 0;
+  position: relative;
+  color: #adb5bd;
+}
+
+
 #back2Top {
   width: 40px;
   line-height: 40px;
