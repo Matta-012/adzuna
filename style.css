@@ -16,6 +16,9 @@
       background:rgba(255, 255, 255, 0.25);
       border-radius: 10px;
     }
+    .input select {
+      max-width: 244px;
+    }
 } 
 
 html, body{
@@ -28,7 +31,7 @@ html, body{
 }
 
 .navbar-toggler{
-  background-color: lightblue;
+  background-color: white;
 }
 
 button i {
@@ -114,10 +117,11 @@ main .hero-container {
   color: #FFF !important;
 }
 
+/* Formulario Banner */
+
 main .input-container {
   max-width: 65%;
   padding: 24px 24px;
-  margin-left: 40px;
 }
 
 .registration-input-box {
@@ -129,17 +133,49 @@ main .input-container {
 }
 
 .btn {
-  min-width: 243.99px
+  min-width: 244px;
+  max-height: 38px;
+}
+
+.btn-primary {
+  background-color: rgb(231, 76, 60);
+  border-color: rgb(231, 76, 60);
+}
+
+.btn-primary:hover {
+  background-color: rgb(160, 72, 0);
+  border-color: rgb(160, 72, 0);
 }
 
 .input i {
   position: absolute;
   padding: 10px 0px 0px 8px;
   color: rgb(124, 124, 124);
+  
 }
 
 .input input {
   font-family: 'sans-serif';
   font-size: 16px;
   padding-left: 35px;
+  color: rgb(124, 124, 124);
+}
+
+.input select {
+  max-width: 244px;
+  min-width: 244px;
+  min-height: 38px;
+  font-family: 'sans-serif';
+  font-size: 16px;
+  padding-left: 35px;
+  color: rgb(124, 124, 124);
+}
+
+.collapsing, .show {
+  background-color: rgb(32, 41, 66);
+  width: 100%;
+}
+
+ul li a {
+  margin-left:10px
 }
