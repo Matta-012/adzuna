@@ -59,17 +59,17 @@
             </div>
             <div class="input p-1">
               <i class="fa fa-location-arrow"></i>
-              <select class="form-select rounded registration-input-box" aria-label="Default select example">
+              <select id="job-location" class="form-select rounded registration-input-box" aria-label="Default select example">
                 <option value="br" selected>País</option>
                 <option value="br">Brasil</option>
-                <option value="us">Estados Unidos da América</option>
+                <option value="us">EUA</option>
                 <option value="ca">Canadá</option>
                 <option value="au">Austrália</option>
               </select>
             </div>
             <div class="input p-1">
               <i class="fa fa-list-alt"></i>
-              <select class="form-select rounded registration-input-box" aria-label="Default select example">
+              <select id="job-category" class="form-select rounded registration-input-box" aria-label="Default select example">
                 <option value="it-jobs" selected>Categorias</option>
                 <option value="it-jobs">TI</option>
                 <option value="manufacturing-jobs">Indústria</option>
@@ -80,12 +80,13 @@
               </select>
             </div>
             <div class="p-1">
-              <input type="submit" value="Submit" class='search-btn submitBnt btn btn-block'>
+              <input type="submit" value="Pesquisar" id="search-btn" class='search-btn submitBnt btn btn-block'>
             </div>
           </div>
       </section>
       <section class="jobs d-flex flex-column justify-content-center align-items-center mw-75">
-        <h2 class="mt-3">Lista de Vagas</h2>
+        <h2 class="mt-3 lista-vagas">Lista de Vagas</h2>
+        <div id="job"></div>
       </section>
       <section class="partnes">
         <div class="container mt-100 mt-60">
