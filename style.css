@@ -75,8 +75,8 @@ ul {
   width: 35% !important;
 }
 
-.nav-link{
-  /* color:white; */
+.navbar-collapse {
+  padding-bottom: 0.50rem;
 }
 
 * {
@@ -293,7 +293,7 @@ input:focus {
 
 .collapsing,
 .show {
-  background-color: rgb(32, 41, 66);
+  background-color: white ;
   width: 100%;
 }
 
