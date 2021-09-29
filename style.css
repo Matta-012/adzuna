@@ -237,7 +237,7 @@ main .input-container {
   flex-wrap: wrap;
 }
 
-.btn {
+.search-btn {
   min-width: 244px;
   max-height: 38px;
 }
@@ -291,12 +291,13 @@ input:focus {
   color: rgb(124, 124, 124);
 }
 
-.collapsing,
-.show {
-  background-color: rgb(32, 41, 66);
-  width: 100%;
-}
-
 ul li a {
   margin-left: 10px;
+}
+
+/* Categorias */
+
+
+.icon-category {
+  font-size:2rem;
 }
