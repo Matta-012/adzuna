@@ -104,6 +104,27 @@ main .hero-container {
   filter: brightness(85%); 
 }
 
+/* TERSTIMONIALS */
+
+.testimonials{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.testimonials h4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.img-fluid {
+  max-width: 30%;
+  height: auto;
+}
+
+.testimonial p{
+  font-size: 14px;
+}
+
 /* PARTNES */
 
 .container-img-partnes{
