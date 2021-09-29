@@ -38,36 +38,57 @@ const getAPIData = async () => {
 
   const filteredURL = urlFilter(jobTitle, jobLocation, jobCategorie);
 
-  // try {
-  //   const data = await fetchAPI(filteredURL);
-  //   console.log(data);
-  // } catch (error) {
-  //   console.log(error);
-  //   alert(error)
-  // }
+  try {
+    const data = await fetchAPI(filteredURL);
+
+    data.results.forEach((jobData) => {
+      createJobListElements(jobData);
+    });
+  } catch (error) {
+    console.log(error);
+    alert(error)
+  }
 };
 
 const createCustomElement = (element, className, innerText) => {
   const el = document.createElement(element);
 
   el.className = className;
-  el.innerText = innerText;
+  el.innerHTML = innerText;
 
   return el;
 };
 
-const createJobListElements = () => {
-  /* 
-    Keys necessárias: results: { category: { label }, created, location: {  display_name  }, redirect_url, title }
-  */
+const createJobListElements = (jobData) => {
+  const { category: { label }, created, location: {  display_name  }, redirect_url, title } = jobData;
+
   const jobsSection = document.querySelector('.jobs');
-  /* 
-    Para cada resultado (vaga diferente), é preciso criar:
-    1 - uma div com a classe card-container
-      1.1 - dentro de cada card-container, deverá ter 3 outras divs job com os filhos -> i com seu respectivo ícone da informação e um p com as informações da API.
-    2 - uma div jobs-container deverá ser criada e nela será feito um append de um h3 com o nome da vaga (vindo da API) e a div card-container.
-    3 - a div jobs-container deverá ser appendada a jobsSection.
-  */
+  const jobsContainer = createCustomElement('div', 'jobs-container d-flex card text-center p-2 m-1', '');
+  jobsSection.append(jobsContainer);
+
+  jobsContainer.append(createCustomElement('h3', 'job-title', title));
+
+  const cardContainer = document.createElement('div');
+  cardContainer.className = 'card-container d-flex flex-wrap justify-content-around';
+  
+  let jobInnerHTML = `<i class='far fa-building fs-5'></i><p class='job-category mx-2 mb-0 fs-5'>${label}</p>`;
+  cardContainer.append(createCustomElement('div', 'job d-flex mx-2 align-items-center', jobInnerHTML));
+
+  jobInnerHTML = `<i class='fas fa-map-marker fs-5'></i><p class='job-location mx-2 fs-5 mb-0'>${display_name}</p>`;
+  cardContainer.append(createCustomElement('div', 'job d-flex mx-2 align-items-center', jobInnerHTML));
+
+  jobInnerHTML = `<i class='far fa-clock fs-5'></i><p class='posted-since mx-2 fs-5 mb-0'>${created}</p>`;
+  cardContainer.append(createCustomElement('div', 'job d-flex mx-2 align-items-center', jobInnerHTML));
+
+  jobsContainer.append(cardContainer);
+
+  const applyBtn = createCustomElement('a', 'btn btn-secondary btn-lg active mt-2 p-0', 'Aplicar');
+  applyBtn.href = redirect_url;
+  applyBtn.target = '_blank';
+  applyBtn.role = 'button';
+
+  jobsContainer.append(applyBtn);
+  jobsSection.append(jobsContainer);
 };
 
 window.onload = async () => {

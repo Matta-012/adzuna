@@ -60,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: #e74c3c !important;
+  color: rgb(231, 76, 60) !important;
 }
 
 ul  {
@@ -68,7 +68,7 @@ ul  {
 }
 
 .w-50 {
-  width: 35%!important;
+  width: 35% !important;
 }
 
 .nav-link{
@@ -116,10 +116,19 @@ main .hero-container {
   margin: 1rem 1.6rem;
 }
 /* CSS João - Início */
+.jobs-container {
+  max-width: 1000px;
+}
+
+.jobs-container:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 2px 1px rgba(40,40,40,0.2);
+  transition: all 0.3s ease;
+}
 
 .jobs-container .btn:hover {
-  background-color: rgb(0, 123, 255);
-  color: rgb(236, 236, 236);
+  background-color: rgb(231, 76, 60);
+  color: rgb(236, 236, 236) !important;
   transition: all .3s ease;
 }
 
@@ -133,7 +142,7 @@ main .hero-container {
 .footer {
   padding: 60px 0;
   position: relative;
-  color: #adb5bd;
+  color: rgb(173, 181, 189);
 }
 
 
@@ -151,11 +160,11 @@ main .hero-container {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  background-color: #5c524e;
+  background-color: rgb(92, 82, 78);
   text-align: center;
   font-size: 30px;
   text-decoration: none;
-  color: #FFF !important;
+  color: white !important;
 }
 
 /* Formulario Banner */
@@ -192,7 +201,6 @@ main .input-container {
   position: absolute;
   padding: 10px 0px 0px 8px;
   color: rgb(124, 124, 124);
-  
 }
 
 .input input {
