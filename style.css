@@ -197,14 +197,21 @@ main .input-container {
   max-height: 38px;
 }
 
-.btn-primary {
+.search-btn {
   background-color: rgb(231, 76, 60);
   border-color: rgb(231, 76, 60);
+  color: rgb(245, 245, 245);
 }
 
-.btn-primary:hover {
+.search-btn:hover {
   background-color: rgb(160, 72, 0);
   border-color: rgb(160, 72, 0);
+  color: rgb(245, 245, 245);
+}
+
+.search-btn:active {
+  background-color: rgb(160, 72, 0) !important;
+  transform: translateY(2px);
 }
 
 .input i {
