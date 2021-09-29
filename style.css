@@ -200,7 +200,16 @@ main .input-container {
   font-size: 16px;
   padding-left: 35px;
   color: rgb(124, 124, 124);
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
+
+input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
 
 .input select {
   max-width: 244px;
