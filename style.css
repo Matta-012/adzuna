@@ -16,10 +16,16 @@
       background:rgba(255, 255, 255, 0.25);
       border-radius: 10px;
     }
-    .input select {
-      max-width: 244px;
-    }
+}
+
+.button-nav{
+  display: inline;
+  max-width: 2px;
 } 
+
+.input select {
+  max-width: 244px;
+}
 
 html, body{
   font-family: 'Poppins';
@@ -89,6 +95,26 @@ main .hero-container {
   background-repeat: no-repeat;
 }
 
+/* PARTNES */
+
+/* ABOUT ME */
+
+.about-me {
+  padding: 3rem 0;
+  background-color: rgb(248, 249, 250);
+}
+.about-me .card-about .card-title{
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.about-me .card-text{
+  text-align: justify;
+  margin: 1rem 1.6rem;
+}
 /* CSS João - Início */
 
 .jobs-container .btn:hover {
