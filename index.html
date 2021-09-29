@@ -20,22 +20,22 @@
                 <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                     <ul class="navbar-nav w-100 justify-content-center">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Categorias</a>
+                            <a class="nav-link" href="#categories">Categorias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Depoimentos</a>
+                            <a class="nav-link" href="#testimonial">Depoimentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Parceiros</a>
+                            <a class="nav-link" href="#partners" >Parceiros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#section-about-me">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contatos</a>
+                            <a class="nav-link" href="#contacts-footer">Contatos</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
@@ -59,17 +59,17 @@
             </div>
             <div class="input p-1">
               <i class="fa fa-location-arrow"></i>
-              <select class="form-select rounded registration-input-box" aria-label="Default select example">
+              <select id="job-location" class="form-select rounded registration-input-box" aria-label="Default select example">
                 <option value="br" selected>País</option>
                 <option value="br">Brasil</option>
-                <option value="us">Estados Unidos da América</option>
+                <option value="us">EUA</option>
                 <option value="ca">Canadá</option>
                 <option value="au">Austrália</option>
               </select>
             </div>
             <div class="input p-1">
               <i class="fa fa-list-alt"></i>
-              <select class="form-select rounded registration-input-box" aria-label="Default select example">
+              <select id="job-category" class="form-select rounded registration-input-box" aria-label="Default select example">
                 <option value="it-jobs" selected>Categorias</option>
                 <option value="it-jobs">TI</option>
                 <option value="manufacturing-jobs">Indústria</option>
@@ -80,14 +80,89 @@
               </select>
             </div>
             <div class="p-1">
-              <input type="submit" value="Submit" class='search-btn submitBnt btn btn-block'>
+              <input type="submit" value="Pesquisar" id="search-btn" class='search-btn submitBnt btn btn-block'>
             </div>
           </div>
       </section>
+      <p class="fs-6 fw-bold hero-text px-2 mb-0">Mais de 350.000 vagas na sua região.</p>
+      <p class="fs-6 fw-bold hero-text px-2 pt-0">Garanta já a sua!</p>
       <section class="jobs d-flex flex-column justify-content-center align-items-center mw-75">
-        <h2 class="mt-3">Lista de Vagas</h2>
+        <h2 class="mt-3 lista-vagas">Lista de Vagas</h2>
+        <div id="job"></div>
       </section>
-      <section class="testimonials"></section>
+      <section id="categories">
+        <h2 class="mt-3 text-center">Categorias Populares</h2>
+        <div class="categories-container row">
+          <div class="col-lg-4 col-md-6 mt-2 pt-2">
+            <div class="popu-category-box bg-light rounded text-center p-4">
+                <div class="popu-category-icon mb-3">
+                  <i class="icon-category fas fa-desktop"></i>
+                </div>
+                <div class="popu-category-content">
+                  <h5 class="mb-2 text-dark title">TI</h5>
+                  <p class="jobs-quantity text-success mb-0 rounded">a</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-2 pt-2"> 
+            <div class="popu-category-box bg-light rounded text-center p-4">
+              <div class="popu-category-icon mb-3">
+                <i class="icon-category fas fa-industry"></i>
+              </div>
+              <div class="popu-category-content">
+                <h5 class="mb-2 text-dark title">Indústria</h5>
+                <p class="jobs-quantity text-success mb-0 rounded">a</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-2 pt-2">
+            <div class="popu-category-box bg-light rounded text-center p-4">
+              <div class="popu-category-icon mb-3">
+                <i class="icon-category fas fa-book"></i>
+              </div>
+              <div class="popu-category-content">
+                <h5 class="mb-2 text-dark title">Administração</h5>
+                <p class="jobs-quantity text-success mb-0 rounded">a</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-2 pt-2">
+            <div class="popu-category-box bg-light rounded text-center p-4">
+              <div class="popu-category-icon mb-3">
+                <i class="icon-category fas fa-microscope"></i>
+              </div>
+              <div class="popu-category-content">
+                <h5 class="mb-2 text-dark title">Ciência e Controle de Qualidade</h5>
+                <p class="jobs-quantity text-success mb-0 rounded">a</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-2 pt-2">
+            <div class="popu-category-box bg-light rounded text-center p-4">
+              <div class="popu-category-icon mb-3">
+                <i class="icon-category fas fa-cash-register"></i>
+              </div>
+              <div class="popu-category-content">
+                <h5 class="mb-2 text-dark title">Vendas</h5>
+                <p class="jobs-quantity text-success mb-0 rounded">a</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-2 pt-2">
+            <div class="popu-category-box bg-light rounded text-center p-4">
+              <div class="popu-category-icon mb-3">
+                <i class="icon-category fas fa-file-invoice-dollar"></i>
+              </div>
+              <div class="popu-category-content">
+                <h5 class="mb-2 text-dark title">Contabilidade e Finanças</h5>
+                <p class="jobs-quantity text-success mb-0 rounded">a</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" class="testimonials">
+        <h4 class="text-center">Nossas historias de sucesso</h4>
         <div class="row text-center">
           <div class="col-md-4 mb-md-0 mb-5">
             <div class="testimonial">
@@ -137,7 +212,7 @@
               <h4 class="font-weight-bold dark-grey-text mt-4">Amanda da Silva</h4>
               <h6 class="font-weight-bold blue-text my-3">Graphic Designer</h6>
               <p class="font-weight-normal dark-grey-text">
-                Um projeto profissional  e de extrema importância para o  cenário atual de empregabilidade. O design e a responsividade são extremamente intuitivos para qualquer tipo de usuário.</p>
+                Projeto excelente, que facilitará a vida de muitos usuários que procuram por um emprego. Design maravilhoso.</p>
               <!--Review-->
               <div class="orange-text">
                 <i class="fas fa-star"> </i>
@@ -155,8 +230,8 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <h4 class="title title-line pb-1">Parceiros</h4>
-                        <p class="partness-p text-muted para-desc mx-auto mb-1"><i>Seja um parceiro da <strong>eJobs</strong> e tenha acesso às inovações e tecnologias para sua instituição ou empresa.</i></p>
+                        <h4 id="partners" class="title title-line pb-1">Parceiros</h4>
+                        <p class="partness-p text-muted para-desc mx-auto mb-1"><i>Seja um parceiro da <strong>eJobs</strong>, tenha acesso à mão de obra qualificada e traga inovação e novas tecnologias para sua instituição ou empresa.</i></p>
                     </div>
                 </div>
             </div>
@@ -167,11 +242,11 @@
             </div>
         </div>
       </section>
-      <section class="about-me">
+      <section id="section-about-me"class="about-me">
             <div class="card-about">
-              <h4 class="card-title">Sobre o Projeto</h4>
-              <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Delegadis gente finis, bibendum egestas augue arcu ut est. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Sapien in monti palavris qui num significa nadis i pareci latim. Leite de capivaris, leite de mula manquis sem cabeça. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Quem num gosta di mim que vai caçá sua turmis!</p>
-              <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Delegadis gente finis, bibendum egestas augue arcu ut est. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Sapien in monti palavris qui num significa nadis i pareci latim. Leite de capivaris, leite de mula manquis sem cabeça. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Quem num gosta di mim que vai caçá sua turmis!</p>
+              <h5 class="card-title">Sobre o Projeto</h5>
+              <p class="card-text">A <b>eJobs</b> é uma solução para um problema que atinge muitos de nós: o desemprego. Nossa aplicação utiliza uma base de dados com vagas de emprego que são acessadas pela API do <a href="https://developer.adzuna.com/" target="_blank">Adzuna</a>. O usuário terá acesso a uma lista de vagas, de forma totalmente gratuita, e poderá aplicar para a vaga que desejar.</p>
+              <p class="card-text">O projeto foi desenvolvido durante o treinamento da <a href="https://www.betrybe.com/" target="_blank">Trybe</a> pelos seguintes estudantes de desenvolvimento Web FullStack: <a href="https://www.linkedin.com/in/gabrieelh/" target="_blank">Gabriel Jorge</a>, <a href="https://www.linkedin.com/in/joao-marco-matta/" target="_blank">João Marco Matta</a>, <a href="https://www.linkedin.com/in/lucaspinheiro1991/" target="_blank">Lucas Pinheiro</a> e <a href="https://www.linkedin.com/in/walace-borges-247611100/" target="_blank">Walace Borges</a>.</p>
             </div>
           </div>
       </section>
@@ -182,25 +257,25 @@
           <div class="row text-center d-flex justify-content-center pt-5">
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Sobre</a>
+                <a href="#section-about-me" class="text-white">Sobre</a>
               </h6>
             </div>
 
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Categorias</a>
+                <a href="#categories" class="text-white">Categorias</a>
               </h6>
             </div>
   
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Depoimentos</a>
+                <a href="#testimonial" class="text-white">Depoimentos</a>
               </h6>
             </div>
   
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Parceiros</a>
+                <a href="#partners" class="text-white">Parceiros</a>
               </h6>
             </div>
   
@@ -208,18 +283,12 @@
 
         </section>
         <!-- Section: Links -->
-  
-        <hr class="my-5" />
-  
+        <hr class="my-5" />  
         <!-- Section: Text -->
         <section class="mb-5">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
               <p>
-                Contatos
+                Visite nossas redes sociais
               </p>
-            </div>
-          </div>
         </section>
         <!-- Section: Text -->
   
@@ -246,14 +315,11 @@
       <!-- Grid container -->
   
       <!-- Copyright -->
-      <div
+      <div id="contacts-footer"
            class="text-center p-3"
            style="background-color: rgba(0, 0, 0, 0.2)"
            >
-        © 2021 Copyright:
-        <a class="text-white" href="https://github.com/Matta-012" target="_blank">
-          Meu nome não é Jhonny
-        </a>
+        © 2021 Copyright: eJobs - Todos os direitos reservados.
       </div>
       <!-- Copyright -->
     </footer>

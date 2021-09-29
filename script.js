@@ -1,7 +1,6 @@
 const APP_ID = '2047c73d';
 const APP_KEY = '1aee86fe2274bc4c8dc595c30941d928';
 const ROOT_URL = 'https://api.adzuna.com/v1/api';
-const STANDARD_SEARCH_URL = '/jobs/br/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5';
 
 /*
 
@@ -23,27 +22,31 @@ const STANDARD_SEARCH_URL = '/jobs/br/search/1?app_id=2047c73d&app_key=1aee86fe2
 
 const fetchAPI = async (url) => (await fetch(url)).json();
 
-const urlFilter = (jobTitleValue, jobLocation, jobCategorie) => {
-  if (!jobTitleValue) {
-    return `${ROOT_URL}${STANDARD_SEARCH_URL}`;
+const urlFilter = (jobTitle, jobLocation, jobCategory) => {
+  const STANDARD_SEARCH_URL = `/jobs/${jobLocation}/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5`;
+  if (!jobTitle) {
+    return `${ROOT_URL}${STANDARD_SEARCH_URL}&category=${jobCategory}`;
   }
 
-  return `${ROOT_URL}/jobs/${jobLocation}/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5&what=${jobTitleValue}&category=${jobCategorie}`;
+  return `${ROOT_URL}${STANDARD_SEARCH_URL}&what=${jobTitle}&category=${jobCategory}`;
 };
 
 const getAPIData = async () => {
-  const jobTitle = 'javascript';
-  const jobCategorie = 'it-jobs';
-  const jobLocation = 'br';
+  const jobList = document.querySelector('.lista-vagas');
+  jobList.style.display = 'block';
+
+  const jobTitle = document.querySelector('#job-title').value;
+  const jobLocation = document.querySelector('#job-location').value;
+  const jobCategorie = document.querySelector('#job-category').value;
 
   const filteredURL = urlFilter(jobTitle, jobLocation, jobCategorie);
 
   try {
-    // const data = await fetchAPI(filteredURL);
+    const data = await fetchAPI(filteredURL);
 
-    // data.results.forEach((jobData) => {
-    //   createJobListElements(jobData);
-    // });
+    data.results.forEach((jobData) => {
+      createJobListElements(jobData);
+    });
   } catch (error) {
     console.log(error);
     alert(error)
@@ -62,9 +65,9 @@ const createCustomElement = (element, className, innerText) => {
 const createJobListElements = (jobData) => {
   const { category: { label }, created, location: {  display_name  }, redirect_url, title } = jobData;
 
-  const jobsSection = document.querySelector('.jobs');
+  const job = document.querySelector('#job');
   const jobsContainer = createCustomElement('div', 'jobs-container d-flex card text-center p-2 m-1', '');
-  jobsSection.append(jobsContainer);
+  job.append(jobsContainer);
 
   jobsContainer.append(createCustomElement('h3', 'job-title', title));
 
@@ -88,9 +91,19 @@ const createJobListElements = (jobData) => {
   applyBtn.role = 'button';
 
   jobsContainer.append(applyBtn);
-  jobsSection.append(jobsContainer);
+  job.append(jobsContainer);
 };
 
 window.onload = async () => {
-  await getAPIData();
+  const searchBtn = document.querySelector('#search-btn');
+
+  searchBtn.addEventListener('click', async () => {
+    const jobsContainer = document.querySelector('.jobs-container');
+    const job = document.querySelector('#job');
+    if (jobsContainer) {
+      job.innerHTML = '';
+    }
+
+    await getAPIData();
+  });
 };
