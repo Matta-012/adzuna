@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @media (min-width: 768px) {
   .navbar-brand.abs {
     position: absolute;
@@ -77,12 +83,6 @@ ul {
 
 .navbar-collapse {
   padding-bottom: 0.50rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 header .logo-container img {
@@ -172,6 +172,9 @@ main .hero-container {
 }
 
 /* CSS João - Início */
+.main-container .jobs .lista-vagas {
+  display: none;
+}
 .jobs-container {
   max-width: 1000px;
 }
@@ -295,8 +298,11 @@ ul li a {
   margin-left: 10px;
 }
 
+.main-container .hero-text {
+  color: rgb(56, 56, 56);
+  text-align: center;
+}
 /* Categorias */
-
 
 .icon-category {
   font-size:2rem;
