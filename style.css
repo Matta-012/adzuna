@@ -303,3 +303,8 @@ input:focus {
 ul li a {
   margin-left: 10px;
 }
+
+.main-container .hero-text {
+  color: rgb(56, 56, 56);
+  text-align: center;
+}
