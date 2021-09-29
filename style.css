@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* HEADER e NAVBAR  */
-
 @media (min-width: 768px) {
   .navbar-brand.abs {
     position: absolute;
@@ -43,14 +41,16 @@ body {
 button i {
   color: blue;
 }
+
 .navbar {
   align-items: center;
+  padding: 1px;
 }
 
 .navbar-brand {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
-  color: white;
+  color: red;
 }
 
 a {
@@ -60,7 +60,11 @@ a {
 }
 
 a:hover {
-  color: #e74c3c !important;
+  color: rgb(231, 76, 60) !important;
+}
+
+.nav-item .button a:hover{
+  color: #2C8437;
 }
 
 ul {
@@ -71,8 +75,8 @@ ul {
   width: 35% !important;
 }
 
-.nav-link {
-  color: white;
+.nav-link{
+  /* color:white; */
 }
 
 * {
@@ -84,17 +88,24 @@ ul {
 header .logo-container img {
   width: 4rem;
   margin: 0.5rem;
+
+}
+
+.header .navbar{
+  background-color: white;
 }
 
 main .hero-container {
   height: 75vh;
   width: 100%;
-  background-image: url(./assets/images/headway-5QgIuuBxKwM-unsplash.jpg);
+  background-image: url(https://themesdesign.in/jobya/images/bg-home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(85%); 
 }
 
 /* PARTNES */
+
 
 /* ABOUT ME */
 
@@ -114,12 +125,22 @@ main .hero-container {
   text-align: justify;
   margin: 1rem 1.6rem;
 }
+
 /* CSS João - Início */
+.jobs-container {
+  max-width: 1000px;
+}
+
+.jobs-container:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 2px 1px rgba(40,40,40,0.2);
+  transition: all 0.3s ease;
+}
 
 .jobs-container .btn:hover {
-  background-color: rgb(0, 123, 255);
-  color: rgb(236, 236, 236);
-  transition: all 0.3s ease;
+  background-color: rgb(231, 76, 60);
+  color: rgb(236, 236, 236) !important;
+  transition: all .3s ease;
 }
 
 .jobs-container .btn:active {
@@ -132,7 +153,7 @@ main .hero-container {
 .footer {
   padding: 60px 0;
   position: relative;
-  color: #adb5bd;
+  color: rgb(173, 181, 189);
 }
 
 #back2Top {
@@ -149,11 +170,11 @@ main .hero-container {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  background-color: #5c524e;
+  background-color: rgb(92, 82, 78);
   text-align: center;
   font-size: 30px;
   text-decoration: none;
-  color: #fff !important;
+  color: white !important;
 }
 
 /* Formulario Banner */
