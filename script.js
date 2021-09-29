@@ -38,9 +38,23 @@ const getAPIData = async () => {
 
   const filteredURL = urlFilter(jobTitle, jobLocation, jobCategorie);
 
-  const data = await fetchAPI(filteredURL);
+  // try {
+  //   const data = await fetchAPI(filteredURL);
+  //   console.log(data);
+  // } catch (error) {
+  //   console.log(error);
+  //   alert(error)
+  // }
+};
 
-  console.log(data);
+const createJobListElements = () => {
+  
+};
+
+const createCustomElement = () => {
+  /* 
+    Keys necessárias: results: { category: { label }, created, location: {  display_name  }, redirect_url, title }
+  */
 };
 
 window.onload = async () => {
