@@ -240,7 +240,7 @@ main .input-container {
   flex-wrap: wrap;
 }
 
-.btn {
+.search-btn {
   min-width: 244px;
   max-height: 38px;
 }
@@ -294,12 +294,6 @@ input:focus {
   color: rgb(124, 124, 124);
 }
 
-.collapsing,
-.show {
-  background-color: white ;
-  width: 100%;
-}
-
 ul li a {
   margin-left: 10px;
 }
@@ -307,4 +301,9 @@ ul li a {
 .main-container .hero-text {
   color: rgb(56, 56, 56);
   text-align: center;
+}
+/* Categorias */
+
+.icon-category {
+  font-size:2rem;
 }
