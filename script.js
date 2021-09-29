@@ -38,7 +38,7 @@ const getAPIData = async () => {
 
   const filteredURL = urlFilter(jobTitle, jobLocation, jobCategorie);
 
-  const data = await fetchAPI(filteredURL);
+  // const data = await fetchAPI(filteredURL);
 
   console.log(data);
 };
