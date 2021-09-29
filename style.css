@@ -75,8 +75,8 @@ ul {
   width: 35% !important;
 }
 
-.nav-link{
-  /* color:white; */
+.navbar-collapse {
+  padding-bottom: 0.50rem;
 }
 
 * {
