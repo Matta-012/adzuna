@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* HEADER e NAVBAR  */
-
 @media (min-width: 768px) {
   .navbar-brand.abs
     {
@@ -17,6 +15,8 @@
       border-radius: 10px;
     }
 }
+
+/* HEADER e NAVBAR  */
 
 .button-nav{
   display: inline;
@@ -43,14 +43,16 @@ html, body{
 button i {
   color: blue;
 }
+
 .navbar {
   align-items: center;
+  padding: 1px;
 }
 
 .navbar-brand {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
-  color: white;
+  color: red;
 }
 
 a {
@@ -63,6 +65,10 @@ a:hover {
   color: rgb(231, 76, 60) !important;
 }
 
+.nav-item .button a:hover{
+  color: #2C8437;
+}
+
 ul  {
   list-style-type: none;
 }
@@ -72,7 +78,7 @@ ul  {
 }
 
 .nav-link{
-  color: white;
+  /* color:white; */
 }
 
 * {
@@ -85,17 +91,23 @@ header .logo-container img {
   width: 4rem;
   margin: 0.5rem;
 
-} 
+}
+
+.header .navbar{
+  background-color: white;
+}
 
 main .hero-container {
   height: 75vh;
   width: 100%;
-  background-image: url(./assets/images/headway-5QgIuuBxKwM-unsplash.jpg);
+  background-image: url(https://themesdesign.in/jobya/images/bg-home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(85%); 
 }
 
 /* PARTNES */
+
 
 /* ABOUT ME */
 
@@ -115,6 +127,7 @@ main .hero-container {
   text-align: justify;
   margin: 1rem 1.6rem;
 }
+
 /* CSS João - Início */
 .jobs-container {
   max-width: 1000px;

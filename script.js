@@ -39,11 +39,11 @@ const getAPIData = async () => {
   const filteredURL = urlFilter(jobTitle, jobLocation, jobCategorie);
 
   try {
-    const data = await fetchAPI(filteredURL);
+    // const data = await fetchAPI(filteredURL);
 
-    data.results.forEach((jobData) => {
-      createJobListElements(jobData);
-    });
+    // data.results.forEach((jobData) => {
+    //   createJobListElements(jobData);
+    // });
   } catch (error) {
     console.log(error);
     alert(error)
