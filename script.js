@@ -62,8 +62,18 @@ const createCustomElement = (element, className, innerText) => {
   return el;
 };
 
+const calcDateDifference = (created) => {
+  const today = new Date();
+
+  const result = Math.floor((today - Date.parse(created)) / (1000 * 60 * 60 * 24));
+
+  return result > 1 ? `${result} dias atrás` : `${result} dia atrás`;
+};
+
 const createJobListElements = (jobData) => {
   const { category: { label }, created, location: {  display_name  }, redirect_url, title } = jobData;
+
+  const postedSince = calcDateDifference(created);
 
   const job = document.querySelector('#job');
   const jobsContainer = createCustomElement('div', 'jobs-container d-flex card text-center p-2 m-1', '');
@@ -80,7 +90,7 @@ const createJobListElements = (jobData) => {
   jobInnerHTML = `<i class='fas fa-map-marker fs-5'></i><p class='job-location mx-2 fs-5 mb-0'>${display_name}</p>`;
   cardContainer.append(createCustomElement('div', 'job d-flex mx-2 align-items-center', jobInnerHTML));
 
-  jobInnerHTML = `<i class='far fa-clock fs-5'></i><p class='posted-since mx-2 fs-5 mb-0'>${created}</p>`;
+  jobInnerHTML = `<i class='far fa-clock fs-5'></i><p class='posted-since mx-2 fs-5 mb-0'>${postedSince}</p>`;
   cardContainer.append(createCustomElement('div', 'job d-flex mx-2 align-items-center', jobInnerHTML));
 
   jobsContainer.append(cardContainer);
