@@ -1,29 +1,11 @@
-const APP_ID = '2047c73d';
-const APP_KEY = '1aee86fe2274bc4c8dc595c30941d928';
+const APP_ID = '025d6491';
+const APP_KEY = 'c05137ab27ab370a4878249f4e814f28';
 const ROOT_URL = 'https://api.adzuna.com/v1/api';
-
-/*
-
-  Exemplos de URL requests:
-  Por padrão, a busca será apenas no Brasil, porém o usuário pode escolher outra localidade.
-  Por padrão, as buscas exibirão 5 resultados. Mais serão acrescidos se sobrar tempo.
-
-  Por país, sem outros filtros: https://api.adzuna.com/v1/api/jobs/br/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5
-
-  Por país e por title (nome da vaga): https://api.adzuna.com/v1/api/jobs/br/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5&what=fullstack
-
-  Por país e por categoria: https://api.adzuna.com/v1/api/jobs/br/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5&category=it-jobs
-
-  Por país, title e categoria: https://api.adzuna.com/v1/api/jobs/br/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5&what=fullstack&&category=it-jobs
-
-  Por país, title, categoria e geolocalização (cidade ou estado): https://api.adzuna.com/v1/api/jobs/br/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5&what=fullstack&where=sao%20paulo&&category=it-jobs
-
-*/
 
 const fetchAPI = async (url) => (await fetch(url)).json();
 
 const urlFilter = (jobTitle, jobLocation, jobCategory) => {
-  const standard_url_endpoint = `/jobs/${jobLocation}/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5`;
+  const standard_url_endpoint = `/jobs/${jobLocation}/search/1?app_id=${APP_ID}&app_key=${APP_KEY}&results_per_page=5`;
   if (!jobTitle) {
     return `${ROOT_URL}${standard_url_endpoint}&category=${jobCategory}`;
   }
@@ -33,7 +15,7 @@ const urlFilter = (jobTitle, jobLocation, jobCategory) => {
 
 const getJobsQuantityByCategory = async () => {
   const country = document.querySelector('#job-location').value;
-  const standard_url_endpoint = `/jobs/${country}/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928`;
+  const standard_url_endpoint = `/jobs/${country}/search/1?app_id=${APP_ID}&app_key=${APP_KEY}`;
   const popularJobsCategory = document.querySelectorAll('.jobs-quantity');
 
   try {
