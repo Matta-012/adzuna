@@ -23,12 +23,31 @@ const ROOT_URL = 'https://api.adzuna.com/v1/api';
 const fetchAPI = async (url) => (await fetch(url)).json();
 
 const urlFilter = (jobTitle, jobLocation, jobCategory) => {
-  const STANDARD_SEARCH_URL = `/jobs/${jobLocation}/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5`;
+  const standard_url_endpoint = `/jobs/${jobLocation}/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928&results_per_page=5`;
   if (!jobTitle) {
-    return `${ROOT_URL}${STANDARD_SEARCH_URL}&category=${jobCategory}`;
+    return `${ROOT_URL}${standard_url_endpoint}&category=${jobCategory}`;
   }
 
-  return `${ROOT_URL}${STANDARD_SEARCH_URL}&what=${jobTitle}&category=${jobCategory}`;
+  return `${ROOT_URL}${standard_url_endpoint}&what=${jobTitle}&category=${jobCategory}`;
+};
+
+const getJobsQuantityByCategory = async () => {
+  const country = document.querySelector('#job-location').value;
+  const standard_url_endpoint = `/jobs/${country}/search/1?app_id=2047c73d&app_key=1aee86fe2274bc4c8dc595c30941d928`;
+  const popularJobsCategory = document.querySelectorAll('.jobs-quantity');
+
+  try {
+    for (let i = 0; i < popularJobsCategory.length; i += 1) {
+      const { id } = popularJobsCategory[i];
+      const url = `${ROOT_URL}${standard_url_endpoint}&category=${id}`;
+  
+      const { count } = await fetchAPI(url);
+  
+      popularJobsCategory[i].innerText = `${count} vagas`;
+    }
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const getAPIData = async () => {
@@ -47,6 +66,8 @@ const getAPIData = async () => {
     data.results.forEach((jobData) => {
       createJobListElements(jobData);
     });
+
+    await getJobsQuantityByCategory();
   } catch (error) {
     console.log(error);
     alert(error)
@@ -106,6 +127,8 @@ const createJobListElements = (jobData) => {
 
 window.onload = async () => {
   const searchBtn = document.querySelector('#search-btn');
+
+  await getJobsQuantityByCategory();
 
   searchBtn.addEventListener('click', async () => {
     const jobsContainer = document.querySelector('.jobs-container');
