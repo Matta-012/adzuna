@@ -198,18 +198,21 @@ main .hero-container {
 }
 .jobs-container {
   max-width: 1000px;
+  transition: all .3s ease;
 }
 
 .jobs-container:hover {
   transform: scale(0.95);
   box-shadow: 0 0 2px 1px rgba(40,40,40,0.2);
-  transition: all 0.3s ease;
+}
+
+.jobs-container .btn {
+  transition: all .3s ease;
 }
 
 .jobs-container .btn:hover {
   background-color: rgb(231, 76, 60);
   color: rgb(236, 236, 236) !important;
-  transition: all .3s ease;
 }
 
 .jobs-container .btn:active {
