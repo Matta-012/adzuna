@@ -51,11 +51,7 @@ The goal of the project was to use an API chosen by the group and develop a web 
 
 ### Web
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
-</p>
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/73181252/135700814-3efc6e50-a6dd-4e76-867a-c635ec35ee17.gif)
 
 ---
 
