@@ -28,6 +28,7 @@ const getJobsQuantityByCategory = async () => {
       popularJobsCategory[i].innerText = `${count} vagas`;
     }
   } catch (error) {
+    alert('Ops, parece que tivemos um problema :(. Aparentemente nossa API atingiu o limite máximo de requisições diárias, tenta novamente amanhã.');
     console.log(error);
   }
 };
@@ -51,8 +52,8 @@ const getAPIData = async () => {
 
     await getJobsQuantityByCategory();
   } catch (error) {
+    alert('Ops, parece que tivemos um problema :(. Aparentemente nossa API atingiu o limite máximo de requisições diárias, tenta novamente amanhã.');
     console.log(error);
-    alert(error)
   }
 };
 
