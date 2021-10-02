@@ -59,14 +59,14 @@ The goal of the project was to use an API chosen by the group and develop a web 
 
 We used the following technologies to build this website:
 
--   HTML
--   CSS
+-   [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+-   [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 -   [Bootstrap](https://getbootstrap.com/)
--   JavaScript
+-   [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## 🛠 Tools
 
--   Visual Studio Code
+-   [Visual Studio Code](https://code.visualstudio.com/)
 -   [Unplash](https://unsplash.com/)
 -   [Font Awesome](https://fontawesome.com/)
 
