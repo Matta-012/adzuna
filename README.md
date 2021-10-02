@@ -1,46 +1,45 @@
 
 
 <h1 align="center">
-     💼 <a href="https://ejobs.vercel.app/#" alt="site do ecoleta"> eJobs </a>
+     💼 <a href="https://ejobs.vercel.app/#" target="_blank"> eJobs </a>
 </h1>
 
 <h3 align="center">
-    Seja um parceiro da eJobs, tenha acesso à mão de obra qualificada e traga inovação e novas tecnologias para sua instituição ou empresa.
+	<i>Having trouble finding new talents to work in your company</i>? Become an eJobs partner, have access to qualified workforce and bring innovation to your business!
 </h3>
  
 </p>
 
 <h4 align="center">
-	🚧 Concluído 🚀 🚧
+	🚧 🚀 Completed Project 🚀 🚧
 </h4>
 
-## 💻 Sobre o projeto
+## 💻 About the Project
 
-A eJobs é uma solução para um problema que atinge muitos de nós: o desemprego. Nossa aplicação utiliza uma base de dados com vagas de emprego que são acessadas pela API do Adzuna. O usuário terá acesso a uma lista de vagas, de forma totalmente gratuita, e poderá aplicar para a vaga que desejar.
+### This project was developed for *academic purposes* and does not have any *monetization*.
 
+eJobs is a solution to a problem that affects many of us: unemployment. Our application uses a database with job positions that are accessed through the Adzuna API. The user will have access to a list of jobs, completely free of charge, and will be able to apply for the job they want, filtering their search by country, category and title.
 
-Projeto desenvolvido durante uma atividade extra proposta pela [Trybe](https://www.betrybe.com/).
-O objetivo da atividade era usarmos uma API e implementar ela a um site criado pelo grupo.
+This project was the winner of a competition organized by [Trybe](https://www.betrybe.com/), in the front-end module transition week, as a bonus project for those who were up to date with the content on the Tribe B of cohort 15. The deadline for delivering the project was 2 days and, after its completion, we had to prepare a 3-minute pitch to present it to an examination board, where the following evaluation criteria were analyzed:
+
+- Creativity;
+- Innovation;
+- Applicability; and
+- Clean Code.
+
+The goal of the project was to use an API chosen by the group and develop a web page that uses it.
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙️ Functionalities
 
-- [x] Empresas ou entidades podem se cadastrar na plataforma web enviando:
-  - [x] uma imagem do ponto de coleta
-  - [x] nome da entidade, email e whatsapp
-  - [x] e o endereço para que ele possa aparecer no mapa
-  - [x] além de selecionar um ou mais ítens de coleta: 
-    - lâmpadas
-    - pilhas e baterias
-    - papéis e papelão
-    - resíduos eletrônicos
-    - resíduos orgânicos
-    - óleo de cozinha
-
-- [x] Os usuários tem acesso ao aplicativo móvel, onde podem:
-  - [x] navegar pelo mapa para ver as instituições cadastradas
-  - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
+- [x] Fully responsive website;
+- [x] Access to a vast bank of job positions;
+- [x] Filtering of job positions by category, country and title;
+- [x] Know the number of job positions in the most popular categories;
+- [x] See how many days ago the job was posted;
+- [x] Access to the respective pages of the chosen job positions;
+- [x] Among others;
 
 ---
 
@@ -64,16 +63,16 @@ O objetivo da atividade era usarmos uma API e implementar ela a um site criado p
 
 ---
 
-## 🛠 Tecnologias
+## 💻 Technologies
 
-As seguintes ferramentas foram usadas na construção do projeto:
+We used the following technologies to build this website:
 
 -   HTML
 -   CSS
 -   [Bootstrap](https://getbootstrap.com/)
 -   JavaScript
 
-## 🛠 Utiliarios
+## 🛠 Tools
 
 -   Visual Studio Code
 -   [Unplash](https://unsplash.com/)
@@ -88,7 +87,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <table>
   <tr>
     <td align="center"><a href="https://github.com/GabrielJorge94"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/87340021?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Jorge</b></sub></a><br /><a href="https://www.betrybe.com/" title="Trybe">🥇</a></td>
-    <td align="center"><a href="https://github.com/Matta-012"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/76047350?v=4" width="100px;" alt=""/><br /><sub><b>João Marco</b></sub></a><br /><a href="https://www.betrybe.com/" title="Trybe">🥇</a></td>
+    <td align="center"><a href="https://github.com/Matta-012"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/76047350?v=4" width="100px;" alt=""/><br /><sub><b>João M. Matta</b></sub></a><br /><a href="https://www.betrybe.com/" title="Trybe">🥇</a></td>
     <td align="center"><a href="https://github.com/fullStackLucas"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQH5CIF9i_3ngw/profile-displayphoto-shrink_800_800/0/1517267892610?e=1638403200&v=beta&t=Qi9qw1yEsP3fzdxwLrM5Cby1N7uof_1i3lS_U1VIs1E" width="100px;" alt=""/><br /><sub><b>Lucas Pinheiro</b></sub></a><br /><a href="https://www.betrybe.com/" title="Trybe">🥇</a></td>
     <td align="center"><a href="https://github.com/walaceborges"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/73181252?v=4" width="100px;" alt=""/><br /><sub><b>Walace Borges</b></sub></a><br /><a href="https://www.betrybe.com/" title="Trybe">🥇</a></td>
   
