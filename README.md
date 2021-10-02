@@ -47,11 +47,7 @@ The goal of the project was to use an API chosen by the group and develop a web 
 
 ### Mobile
 
-<p align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/home-mobile.png" width="200px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px">
-</p>
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/73181252/135700586-04d68d1c-d749-4406-b441-09b55f7d7167.gif)
 
 ### Web
 
