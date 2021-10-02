@@ -74,7 +74,7 @@ We used the following technologies to build this website:
 
 ---
 
-## 👨‍💻 Contribuidores
+## 👨‍💻 Contributors
 
 <table>
   <tr>
