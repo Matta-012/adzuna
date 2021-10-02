@@ -14,7 +14,7 @@
 	🚧 🚀 Completed Project 🚀 🚧
 </h4>
 
-## 💻 About the Project
+## 🖥️ About the Project
 
 ### This project was developed for *academic purposes* and does not have any *monetization*.
 
